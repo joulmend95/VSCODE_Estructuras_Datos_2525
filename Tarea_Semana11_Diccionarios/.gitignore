@@ -1,0 +1,22 @@
+# Ignorar directorios de compilación
+bin/
+obj/
+
+# Ignorar archivos de configuración de usuario
+*.user
+*.suo
+
+# Ignorar carpetas de Visual Studio Code
+.vscode/
+
+# Ignorar archivos y carpetas temporales
+*.tmp
+*.log
+TestResults/
+
+# Ignorar directorios de entornos específicos
+.vs/
+.idea/
+.DS_Store
+Thumbs.db
+.bin

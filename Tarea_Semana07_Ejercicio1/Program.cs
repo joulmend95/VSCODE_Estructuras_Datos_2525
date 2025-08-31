@@ -76,9 +76,16 @@ class Program
         // Llama a la función principal que hace la verificación
         Balanceo.run();
 
-        // Espera a que el usuario presione una tecla antes de cerrar
-        System.Console.WriteLine("Presione cualquier tecla para salir...");
-        System.Console.ReadKey();
+        // Espera a que el usuario presione Enter antes de cerrar
+        System.Console.WriteLine("Presione Enter para salir...");
+        try
+        {
+            System.Console.ReadLine();
+        }
+        catch
+        {
+            // Si hay problemas con la consola, simplemente continúa
+        }
     }
 }
 
