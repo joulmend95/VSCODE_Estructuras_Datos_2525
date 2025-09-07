@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarea_Semana10_Conjuntos", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarea_Semana11_Diccionarios", "Tarea_Semana11_Diccionarios\Tarea_Semana11_Diccionarios.csproj", "{045A992C-F993-4FE7-95C9-F81EF4734528}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semana_12 Conjuntos Y Mapas", "Semana_12 Conjuntos Y Mapas\Semana_12 Conjuntos Y Mapas.csproj", "{64F7972D-C9C5-4CB8-A295-67342492F356}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica Experimental III S12", "Practica Experimental III S12\Practica Experimental III S12.csproj", "{D20C93DA-0E05-4BCF-AF3C-E302E56FB2F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +52,13 @@ Global
 		{045A992C-F993-4FE7-95C9-F81EF4734528}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{045A992C-F993-4FE7-95C9-F81EF4734528}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{045A992C-F993-4FE7-95C9-F81EF4734528}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64F7972D-C9C5-4CB8-A295-67342492F356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64F7972D-C9C5-4CB8-A295-67342492F356}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64F7972D-C9C5-4CB8-A295-67342492F356}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64F7972D-C9C5-4CB8-A295-67342492F356}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D20C93DA-0E05-4BCF-AF3C-E302E56FB2F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D20C93DA-0E05-4BCF-AF3C-E302E56FB2F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D20C93DA-0E05-4BCF-AF3C-E302E56FB2F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D20C93DA-0E05-4BCF-AF3C-E302E56FB2F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
