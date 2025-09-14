@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Tarea_Semana13",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build Tarea_Semana13",
+      "program": "${workspaceFolder}/Tarea_Semana13/bin/Debug/net8.0/Tarea_Semana13.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Tarea_Semana13",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build Tarea_Semana13",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "Tarea_Semana13/Tarea_Semana13.csproj",
+        "-c",
+        "Debug",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$msCompile"],
+      "presentation": {"reveal": "always"}
+    }
+  ]
+}
