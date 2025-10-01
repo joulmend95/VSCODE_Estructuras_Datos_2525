@@ -114,11 +114,3 @@
         return string.Join(" ", palabras);
     }
 }
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        Traductor.Run();
-    }
-}
