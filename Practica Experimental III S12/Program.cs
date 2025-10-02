@@ -4,11 +4,7 @@
 // Este programa implementa un sistema de registro de libros para una biblioteca.
 // Permite registrar libros, consultarlos por ID y mostrar el catálogo completo.
 
-
-
-namespace BibliotecaApp
-{
-    // Clase que representa un libro con sus propiedades principales
+// Clase que representa un libro con sus propiedades principales
     public class Libro
     {
         public string Titulo { get; set; } = string.Empty; // Título del libro
@@ -174,6 +170,4 @@ namespace BibliotecaApp
             }
         }
     }
-}
-
 
