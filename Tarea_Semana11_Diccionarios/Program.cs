@@ -99,18 +99,45 @@
 
     public static string TraducirFrase(string frase, System.Collections.Generic.Dictionary<string, string> diccionario)
     {
+        if (string.IsNullOrEmpty(frase))
+            return "";
+
         string[] palabras = frase.Split(' ');
         for (int i = 0; i < palabras.Length; i++)
         {
-            string palabraLimpia = palabras[i].Trim(new char[] { '.', ',', ';', ':', '!', '?' });
-            string signo = palabras[i].Replace(palabraLimpia, "");
-            string lower = palabraLimpia.ToLower();
-
-            if (diccionario.ContainsKey(lower))
+            string palabraOriginal = palabras[i];
+            
+            // Remover signos de puntuación del inicio y final
+            string palabraLimpia = palabras[i].Trim('¿', '¡', '"', '\'', '(', ')', '.', ',', ';', ':', '!', '?');
+            
+            // Encontrar los signos antes y después
+            string signoInicio = "";
+            string signoFinal = "";
+            
+            int inicioLimpia = palabraOriginal.IndexOf(palabraLimpia);
+            if (inicioLimpia > 0)
             {
-                palabras[i] = diccionario[lower] + signo;
+                signoInicio = palabraOriginal.Substring(0, inicioLimpia);
+            }
+            
+            int finalLimpia = inicioLimpia + palabraLimpia.Length;
+            if (finalLimpia < palabraOriginal.Length)
+            {
+                signoFinal = palabraOriginal.Substring(finalLimpia);
+            }
+            
+            string palabraMinuscula = palabraLimpia.ToLower();
+
+            if (!string.IsNullOrEmpty(palabraLimpia) && diccionario.ContainsKey(palabraMinuscula))
+            {
+                palabras[i] = signoInicio + diccionario[palabraMinuscula] + signoFinal;
             }
         }
         return string.Join(" ", palabras);
+    }
+
+    public static void Main(string[] args)
+    {
+        Run();
     }
 }
